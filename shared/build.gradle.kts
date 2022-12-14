@@ -59,12 +59,18 @@ kotlin {
         }
     }
 }
+sqldelight {
+    database("NoteDatabase") {
+        packageName = "com.develop.multiplatformcrud.database"
+        sourceFolders = listOf("sqldelight")
+    }
+}
 
 android {
     namespace = "com.develop.multiplatformcrud"
-    compileSdk = 32
+    compileSdk = 33
     defaultConfig {
         minSdk = 21
-        targetSdk = 32
+        targetSdk = 33
     }
 }
