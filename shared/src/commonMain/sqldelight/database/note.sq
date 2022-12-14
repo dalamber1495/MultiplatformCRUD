@@ -23,8 +23,8 @@ INTO noteEntity(
     content,
     colorHex,
     created
-) VALUES (?,?,?,?,?);
+)VALUES (?,?,?,?,?);
 
 deleteNoteById:
 DELETE FROM noteEntity
-WHERE id = ?;
+WHERE id=?;
