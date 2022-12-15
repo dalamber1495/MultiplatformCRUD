@@ -13,6 +13,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.develop.multiplatformcrud.android.note_detail.NoteDetailScreen
 import com.develop.multiplatformcrud.android.note_list.NoteListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -37,7 +38,7 @@ class MainActivity : ComponentActivity() {
                         )
                     ) { backStackEntry ->
                         val noteId = backStackEntry.arguments?.getLong("noteId") ?: -1L
-//                        NoteDetailScreen(noteId = noteId, navController = navController)
+                        NoteDetailScreen(noteId = noteId, navController = navController)
                     }
                 }
             }

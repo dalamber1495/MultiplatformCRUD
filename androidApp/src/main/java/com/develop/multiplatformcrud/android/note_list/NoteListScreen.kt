@@ -106,6 +106,8 @@ fun NoteListScreen(
                             .padding(16.dp)
                             .animateItemPlacement()
                     )
+                    if(state.notes.last().id==note.id)
+                        Spacer(modifier = Modifier.height(80.dp))
                 }
             }
         }
